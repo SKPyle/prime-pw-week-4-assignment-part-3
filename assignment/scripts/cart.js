@@ -5,14 +5,16 @@ let basket = ['cherries','apples','bagels'];
 
 
 
-function addItem(item){
-    if (basket.push('')){
-        return "true";
-    }
-        return "false";
-    }
-    
-console.log(addItem());
+function addItem(item) {
+    // adds item to basket
+    basket.push(item);
+  
+    return true;
+  }
+  
+  addItem('pie');
+  addItem('cheese');
+  addItem('bagels');
 
 
 function listItems(){
@@ -20,7 +22,7 @@ for (let i = 0; i < basket.length; i++){
     console.log(basket[i]);
 }
 }
-console.log(listItems());
+listItems();
 
 
 function empty() {
